@@ -1,0 +1,75 @@
+h1 {
+    color: #f2994a;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+.enter-btn,
+.new-btn{
+    background-color:#f2994a;
+    padding: 20px 80px;
+    color:white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.exit-btn{
+    padding: 20px 50px;
+    color:#f2994a;
+    border-radius: 10px;
+    font-weight:700;
+    border: 2px solid #f2994a;
+}
+.memo{
+    position:relative;
+    background-color: #fff3ca;
+    padding: 20px;
+    margin:20px 0;
+    border-radius: 5px;
+}
+.title{
+    margin-bottom:10px ;
+}
+.more-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+.btn-wrap button{
+    padding:5px 10px;
+    background-color:white;
+}
+.delete-btn{
+    color:red
+}
+.btn-wrap{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+.upload-form{
+    background-color:#fff3ca;
+    width:500px;
+    height:400px;
+    padding:20px;
+}
+.upload-btn{
+    background-color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:red;
+}
+.upload-btn-wrap{
+    position:relative;
+}
+.close-btn{
+    position:absolute;
+    top: 0;
+    right:0;       
+}
+.upload-form input,
+.upload-form textarea{
+    background-color:transparent ;
+}
