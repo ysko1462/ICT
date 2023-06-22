@@ -38,3 +38,23 @@
   </body>
   <script src="{% static 'js/memo.js' %}"></script>
 </html>
+
+{% extends 'memo.html' %}
+
+{% block get_all_memo %}
+<ul>
+  {% for memo in memos%}
+    <li class="memo">
+      <p class="title">{{memo.title}}</p>
+      <p class="content">{{memo.content}}</p>
+      <div class="btn-wrap">
+      <button class="open-btn"><a href={%url 'memo_detail' memo.id %}>메모 열기</a></button>
+        <form method="POST" action={% url 'memo_delete' memo.id %}>
+          {% csrf_token %}
+          <button type="submit" class="delete-btn">메모 삭제</button>
+       </form>
+      </div>  
+    </li>
+  {%endfor%}
+</ul>
+{% endblock %}
